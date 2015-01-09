@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var http = require('http'),
     replay = require('replay'),
     httpProxy = require('http-proxy'),
