@@ -1,9 +1,13 @@
 {
   "name": "web-parrot",
   "description": "Caching reverse proxy to capture external web API responses for offline playback",
-  "keywords": ["web", "proxy", "offline"],
+  "keywords": [
+    "web",
+    "proxy",
+    "offline"
+  ],
   "repository": "https://github.com/gimelfarb/web-parrot.git",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "author": {
     "name": "Lev Gimelfarb",
