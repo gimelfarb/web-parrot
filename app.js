@@ -25,6 +25,12 @@ proxy.on('proxyRes', function (proxyRes, req, res) {
     }
 });
 
+proxy.on('error', function(err, req, res) {
+    console.log('Error during request. Error: %s', err.message);
+    res.writeHead(500, {'Content-Type': 'text/plain'});
+    res.end('Error during request. Error: ' + err.message);
+});
+
 var server = http.createServer(function (req, res) {
     console.log('Request: ' + req.url);
     proxy.web(req, res, {
